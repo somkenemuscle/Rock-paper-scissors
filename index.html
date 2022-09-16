@@ -9,10 +9,16 @@
 </head>
 <body>
     
-    <h1>Rock, Paper, Scissors "Shoot" </h1>
+    <h1>Rock, Paper, Scissors "Shoot"  </h1>
 
-    <p>Play Against AI</p>
+    <h3><i> Play Against AI</i> </h3>
 
+    <div>
+      <input id="reset" type="button" value="RESET">
+      <br>
+      <p>Playing to: <span>5</span></p>
+        <input id="num" type="number" min="1" placeholder="Pick Winning Score">
+    </div>
     <div class="scoreboard">
         <h2>Scoreboard</h2>
         <table>
@@ -36,8 +42,10 @@
         <input class="button" type="button" value="PAPER">
         <input class="button" type="button" value="SCISSORS">
     </div>
+    
 
     <div id="status"></div>
+    <h2 id="wins"></h2>
 
     <script src="app.js"></script>
 </body>
