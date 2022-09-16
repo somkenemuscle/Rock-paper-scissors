@@ -24,12 +24,11 @@ btn.forEach(bt => {
        let random = Math.floor(Math.random() * game.length);
 
        //ROCK
-      if (bt.value === game[random]) {
+      if (bt.value === game[random] && !gameOver) {
         situation.innerHTML = "The Bot Played " + game[random] + " ,You Chose " + bt.value +  " ,It's A tie :|"
       }else if (bt.value === "ROCK" && game[random] === "PAPER") {
-        situation.innerHTML = "The Bot Played " + game[random] + " ,You Chose " + bt.value +  " ,Computer Wins :("
-       
         if (!gameOver) {
+        situation.innerHTML = "The Bot Played " + game[random] + " ,You Chose " + bt.value +  " ,Computer Wins :("
           c1score+=1;
           if (c1score === winningScore) {
             gameOver = true;
@@ -39,8 +38,9 @@ btn.forEach(bt => {
         }
       
       }else if (bt.value === "PAPER" && game[random] === "ROCK") {
-        situation.innerHTML = "The Bot Played " + game[random] + " ,You Chose " + bt.value +  " ,So You Win :)"
         if (!gameOver) {
+        situation.innerHTML = "The Bot Played " + game[random] + " ,You Chose " + bt.value +  " ,So You Win :)"
+
           p1score+=1;
           if (p1score === winningScore) {
             gameOver = true;
@@ -51,8 +51,9 @@ btn.forEach(bt => {
         }
       
       }else if (bt.value === "ROCK" && game[random] === "SCISSORS") {
-        situation.innerHTML = "The Bot Played " + game[random] + " ,You Chose " + bt.value +  " ,So You Win :)"
         if (!gameOver) {
+        situation.innerHTML = "The Bot Played " + game[random] + " ,You Chose " + bt.value +  " ,So You Win :)"
+
           p1score+=1;
           if (p1score === winningScore) {
             gameOver = true;
@@ -64,8 +65,9 @@ btn.forEach(bt => {
       
        
       }else if (bt.value === "SCISSORS" && game[random] === "ROCK") {
-        situation.innerHTML = "The Bot Played " + game[random] + " ,You Chose " + bt.value +  " ,Computer WinS :("
         if (!gameOver) {
+        situation.innerHTML = "The Bot Played " + game[random] + " ,You Chose " + bt.value +  " ,Computer WinS :("
+
           c1score+=1;
           if (c1score === winningScore) {
             gameOver = true;
@@ -77,8 +79,9 @@ btn.forEach(bt => {
       }
       //PAPER
       else if (bt.value === "PAPER" && game[random] === "ROCK") {
-        situation.innerHTML = "The Bot Played " + game[random] + " ,You Chose " + bt.value +  " ,So You Win :)"
         if (!gameOver) {
+        situation.innerHTML = "The Bot Played " + game[random] + " ,You Chose " + bt.value +  " ,So You Win :)"
+
           p1score+=1;
           if (p1score === winningScore) {
             gameOver = true;
@@ -89,8 +92,9 @@ btn.forEach(bt => {
         }
       
       }else if (bt.value === "ROCK" && game[random] === "PAPER") {
-        situation.innerHTML = "The Bot Played " + game[random] + " ,You Chose " + bt.value +  " ,Computer WinS :("
         if (!gameOver) {
+        situation.innerHTML = "The Bot Played " + game[random] + " ,You Chose " + bt.value +  " ,Computer WinS :("
+
           c1score+=1;
           if (c1score === winningScore) {
             gameOver = true;
@@ -101,8 +105,9 @@ btn.forEach(bt => {
         }
     
       }else if (bt.value === "PAPER" && game[random] === "SCISSORS") {
-        situation.innerHTML = "The Bot Played " + game[random] + " ,You Chose " + bt.value +  " ,Computer Wins :("
         if (!gameOver) {
+        situation.innerHTML = "The Bot Played " + game[random] + " ,You Chose " + bt.value +  " ,Computer Wins :("
+
           c1score+=1;
           if (c1score === winningScore) {
             gameOver = true;
@@ -113,8 +118,9 @@ btn.forEach(bt => {
         }
        
       }else if (bt.value === "SCISSORS" && game[random] === "PAPER") {
-        situation.innerHTML = "The Bot Played " + game[random] + " ,You Chose " + bt.value +  " ,So You Win :)"
         if (!gameOver) {
+        situation.innerHTML = "The Bot Played " + game[random] + " ,You Chose " + bt.value +  " ,So You Win :)"
+
           p1score+=1;
           if (p1score === winningScore) {
             gameOver = true;
@@ -128,8 +134,9 @@ btn.forEach(bt => {
       }
       //SCISSORS
       else if (bt.value === "SCISSORS" && game[random] === "ROCK") {
-        situation.innerHTML = "The Bot Played " + game[random] + " ,You Chose " + bt.value +  " ,Computer Wins :("
         if (!gameOver) {
+        situation.innerHTML = "The Bot Played " + game[random] + " ,You Chose " + bt.value +  " ,Computer Wins :("
+
           c1score+=1;
           if (c1score === winningScore) {
             gameOver = true;
@@ -140,8 +147,9 @@ btn.forEach(bt => {
         }
         
       }else if (bt.value === "ROCK" && game[random] === "SCISSORS") {
-        situation.innerHTML = "The Bot Played " + game[random] + " ,You Chose " + bt.value +  " ,So You Win :)"
         if (!gameOver) {
+        situation.innerHTML = "The Bot Played " + game[random] + " ,You Chose " + bt.value +  " ,So You Win :)"
+
           p1score+=1;
           if (p1score === winningScore) {
             gameOver = true;
@@ -154,8 +162,9 @@ btn.forEach(bt => {
       p1score+=1
         pscore.innerHTML = p1score;
       }else if (bt.value === "PAPER" && game[random] === "SCISSORS") {
-        situation.innerHTML = "The Bot Played " + game[random] + " ,You Chose " + bt.value +  " ,Computer Wins :("
         if (!gameOver) {
+        situation.innerHTML = "The Bot Played " + game[random] + " ,You Chose " + bt.value +  " ,Computer Wins :("
+
           c1score+=1;
           if (c1score === winningScore) {
             gameOver = true;
@@ -166,8 +175,9 @@ btn.forEach(bt => {
         }
         
       }else if (bt.value === "SCISSORS" && game[random] === "PAPER") {
-        situation.innerHTML = "The Bot Played " + game[random] + " ,You Chose " + bt.value +  " ,So You Win :)"
         if (!gameOver) {
+        situation.innerHTML = "The Bot Played " + game[random] + " ,You Chose " + bt.value +  " ,So You Win :)"
+
           p1score+=1;
           if (p1score === winningScore) {
             gameOver = true;
@@ -194,7 +204,7 @@ function reset() {
   cscore.textContent = 0;
   gameOver = false;
   situation.innerHTML = ' '
-  overall.innerHTML = ' '
+  overall.innerHTML = ''
 }
 
 numInput.addEventListener("change", function() {
